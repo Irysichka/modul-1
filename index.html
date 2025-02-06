@@ -3,46 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Simply Chocolate</title>
   </head>
   <body>
-    <header>
-      <a href="./index.html"><span>Simply</span>chocolate</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#made">How it’s made?</a></li>
-          <li><a href="#chocolate">Chocolate is loved</a></li>
+    <header class="header">
+      <a class="logo" href="./index.html"
+        ><span class="logo-style">SIMPLY</span>CHOCOLATE</a
+      >
+      <nav class="nav-header">
+        <ul class="nav-list-header">
+          <li class="nav-header-item">
+            <a class="item-nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-header-item">
+            <a class="item-nav-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="nav-header-item">
+            <a class="item-nav-link" href="#chocolate">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <!-- #region h1-->
-      <section>
-        <h1>
+      <!-- #region hero-->
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="">How it’s made</a>
-        <a href="">scroll down</a>
+        <button class="hero-btn" type="button">Buy now</button>
+        <a class="hero-link-made" href="">How it’s made</a>
+        <a class="hero-link-down" href="">scroll down</a>
       </section>
-      <!-- #endregion h1-->
-      <!-- #region Unsurpassed taste-->
-      <section>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+      <!-- #endregion hero-->
+      <!-- #region Benefits-->
+      <section class="benefits">
+        <h2 class="benefits-title section-title">BENEFITS TITLE</h2>
+        <ul class="benefits-list">
+          <li class="benefits-list-item">
+            <h3 class="benefits-item-title">Unsurpassed taste</h3>
+            <p class="benefits-item-text">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="benefits-list-item">
+            <h3 class="benefits-item-title">Affordable price</h3>
+            <p class="benefits-item-text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -50,9 +73,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="benefits-list-item">
+            <h3 class="benefits-item-title">Own production</h3>
+            <p class="benefits-item-text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -61,10 +84,13 @@
           </li>
         </ul>
       </section>
-      <!-- #endregion Unsurpassed taste-->
+      <!-- #endregion Benefits-->
       <!-- #region IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION-->
       <section>
-        <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
+        <h2 class="section-title">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL
+          <span class="orange">TASTE</span> SENSATION
+        </h2>
         <p>
           At Simply Chocolate, we believe that the secret to exceptional
           chocolate is in the details. From the sourcing of the finest
@@ -93,7 +119,7 @@
       <!-- #endregion IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION-->
       <!-- #region How it`s made-->
       <section id="made">
-        <h2>How it’s <span>made</span></h2>
+        <h2 section-title>HOW IT’S <span class="orange">MADE</span></h2>
         <img src="./images/image.jpg" alt="image" width="600" height="400" />
         <h3>
           Try our chocolates today and discover the perfect balance of flavor
@@ -129,7 +155,7 @@
       <!-- #endregion How it`s made-->
       <!-- #region Chocolate is loved-->
       <section id="chocolate">
-        <h2><span>Chocolate</span> is loved</h2>
+        <h2 section-title><span class="orange">CHOCOLATE</span> IS LOVED</h2>
         <ul>
           <li>
             <img
@@ -177,27 +203,41 @@
       </section>
       <!-- #endregion Chocolate is loved-->
     </main>
-    <footer id="footer">
-      <p>
-        Chocolate is a family favourite treat. Love the delicious smooth
-        chocolate and the creaminess inside. The wafer is soft but crunchy.
+
+    <!-- #region Footer-->
+    <footer class="footer" id="footer">
+      <p class="footer-text">
+        <span class="orange">Chocolate</span> a delicious cure for a bad day
       </p>
-      <address>
-        <p>Contact us</p>
-        <ul>
-          <li><a href="tel:+380(68)443-94-26">+380 (68) 443-94-26</a></li>
+      <address class="footer-adr">
+        <p class="footer-adr-text">Contact us</p>
+        <ul class="footer-adr-list">
+          <li class="footer-adr-item">
+            <a class="footer-adr-link" href="tel:+380(68)443-94-26"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
           <li>
-            <a href="mailto:simplycthаoc@gmail.com">simplycthаoc@gmail.com</a>
+            <a class="footer-adr-link" href="mailto:simplycthаoc@gmail.com"
+              >simplycthаoc@gmail.com</a
+            >
           </li>
         </ul>
       </address>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#made">How it’s made?</a></li>
-          <li><a href="#chocolate">Chocolate is loved</a></li>
+      <nav class="nav-footer">
+        <ul class="nav-list-header">
+          <li class="nav-header-item">
+            <a class="item-nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-header-item">
+            <a class="item-nav-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="nav-header-item">
+            <a class="item-nav-link" href="#chocolate">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
     </footer>
+    <!-- #endregion Footer-->
   </body>
 </html>
