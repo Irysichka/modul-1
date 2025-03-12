@@ -33,7 +33,18 @@ ol {
   margin: 0;
   padding: 0;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 p,
 h1,
 h2,
@@ -266,6 +277,8 @@ button {
   background-size: cover;
   background-position: center;
   margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero-container {
   margin-right: auto;
@@ -335,8 +348,8 @@ button {
   letter-spacing: -0.03em;
   color: #fff;
   display: flex;
-align-items: center;
-gap: 12px;
+  align-items: center;
+  gap: 12px;
 }
 .hero-icon {
   width: 28px;
@@ -361,7 +374,7 @@ gap: 12px;
         rgba(17, 17, 17, 0.4)
       ),
       url(../images/chocolate-covered-tablet.jpg);
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
   @media (min-resolution: 2x) {
     .hero {
@@ -381,9 +394,9 @@ gap: 12px;
     max-width: 484px;
   }
   .btn-container {
-  flex-direction: row;
-align-items: baseline;
-justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
   }
   .hero-btn {
     width: 144px;
@@ -403,60 +416,74 @@ justify-content: space-between;
     color: #fd9222;
   }
 
-.hero-link-down:hover,
-.hero-link-down:focus {
-  color: #fd9222;
-}
+  .hero-link-down:hover,
+  .hero-link-down:focus {
+    color: #fd9222;
+  }
 }
 
-@media screen and (min-width:1168px) {
-.hero {
-    background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-        rgba(17, 17, 17, 0.4)),
+@media screen and (min-width: 1168px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
       url(../images/chocolate-covered-desk.jpg);
-      margin-bottom: 72px;
+    margin-bottom: 72px;
   }
 
   @media (min-resolution: 2x) {
     .hero {
-      background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-          rgba(17, 17, 17, 0.4)),
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
         url(../images/chocolate-covered-desk@2x.jpg);
     }
-}
-.hero-container{
-padding: 381px 72px 40px 72px;
-}
-
+  }
+  .hero-container {
+    padding: 381px 72px 40px 72px;
+  }
 }
 /* #endregion hero  */
 
 /* #region Benefits  */
 .benefits {
   background-color: #1e1823;
+  margin-bottom: 60px;
 }
-
-.benefits-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
+.benefits-container {
+  padding: 20px;
 }
 
 .benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .benefits-list-item {
+  width: 308px;
+}
+.benefits-container-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-icon {
+  fill: #fd9222;
 }
 
 .benefits-item-title {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .benefits-item-text {
@@ -466,8 +493,151 @@ padding: 381px 72px 40px 72px;
   color: rgba(255, 255, 255, 0.7);
 }
 
+@media screen and (min-width: 768px) {
+  .benefits {
+    margin-bottom: 80px;
+  }
+  .benefits-container {
+    padding: 50px 32px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .benefits-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media screen and (min-width: 1168px) {
+  .benefits {
+    margin-bottom: 100px;
+  }
+  .benefits-container {
+    padding: 50px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 70px;
+  }
+  .benefits-list-item {
+    width: calc((100% - 140px) / 3);
+  }
+}
 /* #endregion Benefits  */
 
+/* #region TASTE SENSATION  */
+.taste-sensation {
+  margin-bottom: 60px;
+}
+.taste-sensation-title {
+  margin-bottom: 24px;
+}
+
+.section-title-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+
+.taste-sensation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.taste-sensation-list-items {
+  text-align: center;
+  width: 335px;
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+}
+.taste-sensation-list-items:nth-child(1) {
+  border: none;
+  background-color: #fd9222;
+}
+.taste-sensation-list-items:nth-child(3) {
+  background-color: #1e1823;
+  border: none;
+}
+.taste-sensation-picture {
+  padding-top: 28px;
+  margin-bottom: 25px;
+}
+.taste-sensation-picture-name.picture-name {
+  color: #fff;
+}
+.taste-sensation-picture-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  text-align: start;
+  padding-bottom: 28px;
+  padding-left: 28px;
+}
+@media screen and (min-width: 768px) {
+  .taste-sensation {
+    margin-bottom: 80px;
+  }
+  .taste-sensation-title {
+    margin: 0 auto;
+    width: 411px;
+    margin-bottom: 28px;
+  }
+
+  .section-title-text {
+    width: 486px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .taste-sensation-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .taste-sensation-list-items {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media screen and (min-width: 1168px) {
+  .taste-sensation {
+    margin-bottom: 100px;
+  }
+  .taste-sensation-list {
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+  .taste-sensation-list-items {
+    width: calc((100% - 57px) / 4);
+  }
+}
+/* #region overlay */
+.overlay {
+ position:;
+ top: 0;
+ left: 0; 
+}
+
+.overlay-title {}
+
+.overlay-link {}
+
+.overlay-link-btn {}
+
+.overlay-text {}
+
+
+/* #endregion overlay */
+
+/* #endregion TASTE SENSATION  */
 /* #region Footer  */
 
 .footer {
