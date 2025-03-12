@@ -556,6 +556,8 @@ button {
   width: 335px;
   border-radius: 15px;
   border: 1px solid #fd9222;
+  position: relative;
+  overflow: hidden;
 }
 .taste-sensation-list-items:nth-child(1) {
   border: none;
@@ -620,26 +622,101 @@ button {
   }
 }
 /* #region overlay */
+@media screen and (max-width:1167px){
+  .overlay{
+    display: none;
+  }
+  
+}
+@media  screen and (min-width:1168px) {
 .overlay {
- position:;
+ position:absolute;
  top: 0;
  left: 0; 
+ transform: translateX(100%);
+ transition: transform 300ms ease-in-out;
+ background-color: #fafafa;
+ padding: 28px;
+}
+.taste-sensation-list-items:hover .overlay{
+ transform: translateX(0); 
 }
 
-.overlay-title {}
+.overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+  text-align: start;
+}
+.overlay-link-cont{
+  display: flex;
+  gap: 6px;
+}
+.overlay-link {
+  display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #fd9222;
+  border-radius: 35px;
+    padding: 6px 16px;
+    width: 81px;
+    height: 24px;
+    margin-bottom: 14px;
+}
+.overlay-link.milk{
+  width: 54px;
+    height: 24px;
+}
+.overlay-link.nuts{
+width: 55px;
+height: 24px;}
 
-.overlay-link {}
+.overlay-link.sweet-chocolate{
+  width: 114px;
+    height: 24px;
+}
 
-.overlay-link-btn {}
+.overlay-link-btn {
+  border: 1px solid #fd9222;
+    border-radius: 35px;
+    width: 93px;
+    height: 24px;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 1.2;
+      color: #111;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-.overlay-text {}
-
+.overlay-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #111;
+    text-align: start;
+}
+}
 
 /* #endregion overlay */
 
 /* #endregion TASTE SENSATION  */
-/* #region Footer  */
+/* #region How it`s made */
 
+
+
+
+/* #endregion How it`s made */
+
+
+/* #region Footer  */
 .footer {
   background-color: #1e1823;
 }
