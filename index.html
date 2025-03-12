@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Simply Chocolate</title>
-  </head>
-  <body>
-    <header class="header">
-      <a class="logo" href="./index.html"
-        ><span class="logo-style">SIMPLY</span>CHOCOLATE</a
-      >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Simply Chocolate</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo" href="./index.html"><span class="logo-style">SIMPLY</span> CHOCOLATE
+        <svg class="header-icon" width="21" height="21">
+          <use href="./icons.svg#icon-chocolate"></use>
+        </svg></a>
       <nav class="nav-header">
         <ul class="nav-list-header">
           <li class="nav-header-item">
@@ -37,30 +34,97 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <!-- #region hero-->
-      <section class="hero">
+      <ul class="burger-icon-list">
+        <li class="burger-item-icon">
+          <a href="#" class="icon-link">
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./icons.svg#icon-instagram"></use>
+            </svg></a>
+        </li>
+        <li class="burger-item-icon">
+          <a href="#" class="icon-link">
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./icons.svg#icon-twitter"></use>
+            </svg></a>
+        </li>
+      </ul>
+      <button class="burger-btn" type="button">
+        <svg class="burger-icon-btn" width="28" height="28">
+          <use href="./icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+  <!-- #region burger-menu-->
+  <div class="burger-menu">
+    <button class="close-btn" type="button">
+      <svg class="close-icon" width="12" height="12">
+        <use href="./icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="nav-burger">
+      <ul class="nav-list-burger">
+        <li class="nav-burger-item">
+          <a class="item-burger-link current" href="./index.html">Home</a>
+        </li>
+        <li class="nav-burger-item">
+          <a class="item-burger-link" href="#made">How it’s made?</a>
+        </li>
+        <li class="nav-burger-item">
+          <a class="item-burger-link" href="#chocolate">Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="burger-menu-icon-list">
+      <li class="burger-item-icon">
+        <a href="#">
+          <svg class="burger-menu-icon" width="24" height="24">
+            <use href="./icons.svg#icon-instagram"></use>
+          </svg></a>
+      </li>
+      <li class="burger-item-icon">
+        <a href="#">
+          <svg class="burger-menu-icon" width="24" height="24">
+            <use href="./icons.svg#icon-twitter"></use>
+          </svg></a>
+      </li>
+    </ul>
+  </div>
+  <!-- #endregion burger-menu-->
+  <main>
+    <!-- #region hero-->
+    <section class="hero">
+      <div class="hero-container">
         <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button class="hero-btn" type="button">Buy now</button>
-        <a class="hero-link-made" href="">How it’s made</a>
-        <a class="hero-link-down" href="">scroll down</a>
-      </section>
-      <!-- #endregion hero-->
-      <!-- #region Benefits-->
-      <section class="benefits">
+        <div class="btn-container">
+          <div class="btn-container-icon">
+            <button class="hero-btn" type="button">Buy now</button>
+            <a class="hero-link-made" href="">How it’s made</a>
+          </div>
+          <a class="hero-link-down" href="">scroll down
+            <button class="hero-icon" type="button"> <svg class="hero-icon-tick" width="16" height="16">
+                <use href="./icons.svg#icon-tick"></use>
+              </svg></button></a>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion hero-->
+    <!-- #region Benefits-->
+    <section class="benefits">
+      <div>
         <h2 class="benefits-title section-title">BENEFITS TITLE</h2>
         <ul class="benefits-list">
           <li class="benefits-list-item">
             <h3 class="benefits-item-title">Unsurpassed taste</h3>
             <p class="benefits-item-text">
               Crafted with the finest quality cocoa beans and a dedication to
-              perfection, each bite is a decadent experience that simply cannot
-              be matched. Savor the richness and complexity of our Unsurpassed
-              Taste and discover a new level of chocolate bliss.
+              perfection, each bite is a decadent experience that simply
+              cannot be matched. Savor the richness and complexity of our
+              Unsurpassed Taste and discover a new level of chocolate bliss.
             </p>
           </li>
           <li class="benefits-list-item">
@@ -69,24 +133,26 @@
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
-              sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
+              sacrificing taste or quality. Browse our selection and indulge
+              in affordable luxury today.
             </p>
           </li>
           <li class="benefits-list-item">
             <h3 class="benefits-item-title">Own production</h3>
             <p class="benefits-item-text">
               We take pride in our own production process, ensuring that every
-              step is carefully crafted to perfection. From selecting the finest
-              ingredients to handcrafting each piece, our attention to detail is
-              evident in every bite.
+              step is carefully crafted to perfection. From selecting the
+              finest ingredients to handcrafting each piece, our attention to
+              detail is evident in every bite.
             </p>
           </li>
         </ul>
-      </section>
-      <!-- #endregion Benefits-->
-      <!-- #region IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION-->
-      <section>
+      </div>
+    </section>
+    <!-- #endregion Benefits-->
+    <!-- #region IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION-->
+    <section class="hidden">
+      <div class="container">
         <h2 class="section-title">
           IT ALL ADDS UP TO ONE EXCEPTIONAL
           <span class="orange">TASTE</span> SENSATION
@@ -115,11 +181,15 @@
             <h3>SEMI-SWEET CHOCOLATE</h3>
           </li>
         </ul>
-      </section>
-      <!-- #endregion IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION-->
-      <!-- #region How it`s made-->
-      <section id="made">
-        <h2 section-title>HOW IT’S <span class="orange">MADE</span></h2>
+      </div>
+    </section>
+    <!-- #endregion IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION-->
+    <!-- #region How it`s made-->
+    <section id="made" class="hidden">
+      <div class="container">
+        <h2 class="section-title">
+          HOW IT’S <span class="orange">MADE</span>
+        </h2>
         <img src="./images/image.jpg" alt="image" width="600" height="400" />
         <h3>
           Try our chocolates today and discover the perfect balance of flavor
@@ -132,7 +202,9 @@
             </p>
           </li>
           <li>
-            <p>t the same time, prepare a water bath. Melt the butter on it.</p>
+            <p>
+              t the same time, prepare a water bath. Melt the butter on it.
+            </p>
           </li>
           <li>
             <p>
@@ -151,19 +223,18 @@
             </p>
           </li>
         </ul>
-      </section>
-      <!-- #endregion How it`s made-->
-      <!-- #region Chocolate is loved-->
-      <section id="chocolate">
-        <h2 section-title><span class="orange">CHOCOLATE</span> IS LOVED</h2>
+      </div>
+    </section>
+    <!-- #endregion How it`s made-->
+    <!-- #region Chocolate is loved-->
+    <section id="chocolate" class="hidden">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="orange">CHOCOLATE</span> IS LOVED
+        </h2>
         <ul>
           <li>
-            <img
-              src="./images/ellipse.png"
-              alt="Victoria Dobrzhanska"
-              width="80"
-              height="80"
-            />
+            <img src="./images/ellipse.png" alt="Victoria Dobrzhanska" width="80" height="80" />
             <h3>Victoria Dobrzhanska</h3>
             <p>
               I love this chocolate bar. Perfect combination of light crispy
@@ -171,12 +242,7 @@
             </p>
           </li>
           <li>
-            <img
-              src="./images/ellipse-2.png"
-              alt="Nazar Babenko"
-              width="80"
-              height="80"
-            />
+            <img src="./images/ellipse-2.png" alt="Nazar Babenko" width="80" height="80" />
             <h3>Nazar Babenko</h3>
             <p>
               This chocolate confection is a delight! A delight! The wafer is
@@ -185,12 +251,7 @@
             </p>
           </li>
           <li>
-            <img
-              src="./images/ellipse-3.png"
-              alt="Olena Kampusch"
-              width="80"
-              height="80"
-            />
+            <img src="./images/ellipse-3.png" alt="Olena Kampusch" width="80" height="80" />
             <h3>Olena Kampusch</h3>
             <p>
               Chocolate is a family favourite treat. Love the delicious smooth
@@ -200,12 +261,14 @@
           </li>
         </ul>
         <button type="button">Leave a review</button>
-      </section>
-      <!-- #endregion Chocolate is loved-->
-    </main>
+      </div>
+    </section>
+    <!-- #endregion Chocolate is loved-->
+  </main>
 
-    <!-- #region Footer-->
-    <footer class="footer" id="footer">
+  <!-- #region Footer-->
+  <footer class="footer hidden" id="footer">
+    <div class="container">
       <p class="footer-text">
         <span class="orange">Chocolate</span> a delicious cure for a bad day
       </p>
@@ -213,14 +276,10 @@
         <p class="footer-adr-text">Contact us</p>
         <ul class="footer-adr-list">
           <li class="footer-adr-item">
-            <a class="footer-adr-link" href="tel:+380(68)443-94-26"
-              >+380 (68) 443-94-26</a
-            >
+            <a class="footer-adr-link" href="tel:+380(68)443-94-26">+380 (68) 443-94-26</a>
           </li>
           <li>
-            <a class="footer-adr-link" href="mailto:simplycthаoc@gmail.com"
-              >simplycthаoc@gmail.com</a
-            >
+            <a class="footer-adr-link" href="mailto:simplycthаoc@gmail.com">simplycthаoc@gmail.com</a>
           </li>
         </ul>
       </address>
@@ -237,7 +296,9 @@
           </li>
         </ul>
       </nav>
-    </footer>
-    <!-- #endregion Footer-->
-  </body>
+    </div>
+  </footer>
+  <!-- #endregion Footer-->
+</body>
+
 </html>
