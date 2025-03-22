@@ -123,7 +123,7 @@
                 <use href="./icons.svg#icon-chocolate-bar"></use>
               </svg></div>
             <h3 class="benefits-item-title">Unsurpassed taste</h3>
-            <p class="benefits-item-text">
+            <p class="benefits-item-text currenty">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply
               cannot be matched. Savor the richness and complexity of our
@@ -135,7 +135,7 @@
                 <use href="./icons.svg#icon-coin"></use>
               </svg></div>
             <h3 class="benefits-item-title">Affordable price</h3>
-            <p class="benefits-item-text">
+            <p class="benefits-item-text currenty">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -243,82 +243,94 @@
     </section>
     <!-- #endregion TASTE SENSATION-->
     <!-- #region How it`s made-->
-    <section id="made" class="">
-      <div class="container">
+    <section id="made" class="made-cont">
+      <div class="container made-container">
         <h2 class="section-title made-title">
           HOW IT’S <span class="orange">MADE</span>
         </h2>
-        <img class="made-img" src="./images/image.jpg" alt="image" width="600" height="400" />
-        <h3>
-          Try our chocolates today and discover the perfect balance of flavor
-        </h3>
-        <ul>
-          <li>
-            <p>
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </p>
-          </li>
-          <li>
-            <p>
-              t the same time, prepare a water bath. Melt the butter on it.
-            </p>
-          </li>
-          <li>
-            <p>
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </p>
-          </li>
-          <li>
-            <p>Heat the mixture over low heat, letting it barely boil.</p>
-          </li>
-          <li>
-            <p>
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </p>
-          </li>
-        </ul>
+        <div class="made-cont-block">
+          <picture>
+            <source srcset="./images/video-desktop.jpg 1x, ./images/video-desktop@2x.jpg 2x" media="(min-width:1168px)">
+            <source srcset="./images/video-tablet.jpg 1x, ./images/video-tablet@2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="./images/video.jpg 1x, ./images/video@2x.jpg 2x" media="(max-width:767px)">
+            <img class="made-img" src="./images/video.jpg" alt="image" />
+          </picture>
+          <div class="made-title-container">
+            <h3 class="made-title-list">
+              Try our chocolates today and discover the perfect balance of flavor
+            </h3>
+            <ul class="made-title-items">
+              <li class="made-item">
+                <p class="made-title-text">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-title-text">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-title-text">
+                  "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                  with a silicone spatula so that the mass becomes uniform and
+                  silky.
+                </p>
+              </li class="made-item">
+              <li>
+                <p class="made-title-text">Heat the mixture over low heat, letting it barely boil.</p>
+              </li>
+              <li class="made-item">
+                <p class="made-title-text">
+                  Pour the chocolate into special containers (can be replaced with
+                  ice molds). Allow to cool and harden.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!-- #endregion How it`s made-->
     <!-- #region Chocolate is loved-->
-    <section id="chocolate" class="hidden">
+    <section id="chocolate" class="chocolate-love">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title chocolate-title">
           <span class="orange">CHOCOLATE</span> IS LOVED
         </h2>
-        <ul>
-          <li>
-            <img src="./images/ellipse.png" alt="Victoria Dobrzhanska" width="80" height="80" />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
+        <ul class="chocolate-list">
+          <li class="chocolate-list-items">
+            <img class="chocolate-img" src="./images/ellipse.png" alt="Victoria Dobrzhanska" width="80" height="80" />
+            <h3 class="chocolate-img-name">Victoria Dobrzhanska</h3>
+            <p class="chocolate-list-text">
               I love this chocolate bar. Perfect combination of light crispy
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li>
-            <img src="./images/ellipse-2.png" alt="Nazar Babenko" width="80" height="80" />
-            <h3>Nazar Babenko</h3>
-            <p>
+          <li class="chocolate-list-items nazar">
+            <img class="chocolate-img" src="./images/ellipse-2.png" alt="Nazar Babenko" width="80" height="80" />
+            <h3 class="chocolate-img-name">Nazar Babenko</h3>
+            <p class="chocolate-list-text">
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
               is good.
             </p>
           </li>
-          <li>
-            <img src="./images/ellipse-3.png" alt="Olena Kampusch" width="80" height="80" />
-            <h3>Olena Kampusch</h3>
-            <p>
+          <li class="chocolate-list-items olena">
+            <img class="chocolate-img" src="./images/ellipse-3.png" alt="Olena Kampusch" width="80" height="80" />
+            <h3 class="chocolate-img-name">Olena Kampusch</h3>
+            <p class="chocolate-list-text">
               Chocolate is a family favourite treat. Love the delicious smooth
               chocolate and the creaminess inside. The wafer is soft but
               crunchy.
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <svg class="chocolate-svg" width="80" height="30">
+          <use href="./icons.svg#icon-offer-banner"></use>
+        </svg>
+        <button class="chocolate-btn" type="button">Leave a review</button>
       </div>
     </section>
     <!-- #endregion Chocolate is loved-->
@@ -360,3 +372,15 @@
 </body>
 
 </html>
+
+<!-- #region Projects-->
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">Explore the High Seas with Our Luxury Yacht Rentals</h1>
+    <p class="hero-text">Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line
+      yachts and embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities.</p>
+    <a class="hero-link" href="#rent-a-jacht">Yacht rental</a>
+  </div>
+</section>
+
+<!-- #endregion Projects-->

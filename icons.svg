@@ -43,5 +43,13 @@
     <symbol id="icon-user" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.824" d="M26.667 28v-2.667A5.334 5.334 0 0 0 21.334 20H10.667a5.334 5.334 0 0 0-5.333 5.333V28M16 14.667a5.333 5.333 0 1 0 0-10.666 5.333 5.333 0 0 0 0 10.666z"/>
     </symbol>
+    <symbol id="icon-Ellipse-1" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14s-14-6.268-14-14c0-7.732 6.268-14 14-14s14 6.268 14 14z"></path>
+</symbol>
+<symbol id="icon-offer-banner" viewBox="0 0 199 32">
+<path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M54.154 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
+<path fill="#111" style="fill: var(--color2, #111)" opacity="0.1" d="M118.154 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16c0 8.837 7.163 16 16 16z"></path>
+<path fill="#111" style="fill: var(--color2, #111)" opacity="0.1" d="M182.154 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16c0 8.837 7.163 16 16 16z"></path>
+</symbol>
   </defs>
 </svg>
