@@ -176,7 +176,7 @@ button {
 .logo {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
@@ -277,6 +277,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 30px;
   margin-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
@@ -831,9 +832,11 @@ padding-left: 32px;
 
 .chocolate-list-items {
 border: 1px solid rgba(17, 17, 17, 0.1);
+background-color: #fff;
   border-radius: 15px;
-  width: 335px;
+  width: 100%;
   position: relative;
+  padding-bottom: 42px;
 }
 
 .chocolate-img {
@@ -859,6 +862,8 @@ left: 130px;
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
+    padding-right: 18px;
+    padding-left: 18px;
 }
 .chocolate-svg{
   display: block;
@@ -896,7 +901,6 @@ color: #fff;
 .chocolate-list{
 display: flex;
 gap: 16px;
-align-items: center;
 justify-content: center;
 margin-bottom: 32px;
 }
@@ -905,6 +909,9 @@ margin-bottom: 32px;
 }
 .chocolate-list-items{
   width:calc((100% - 16px) / 2);
+}
+.chocolate-list-items.nazar{
+padding-bottom:26px;
 }
 .chocolate-btn{
 margin-top: 50px;
@@ -922,6 +929,9 @@ margin-top: 50px;
 .chocolate-list {
   gap: 28px;
   margin-bottom: 49px;
+}
+.chocolate-list-items {
+  width: calc((100% - 56px) / 3);
 }
 .chocolate-svg {
   display: none;
@@ -979,169 +989,3 @@ margin-top: 50px;
   color: #fd9222;
 }
 /* #endregion Footer  */
-
-
-/* #region Projects */
-.hero {
-  padding-top: 198px;
-  padding-bottom: 243px;
-  background-image: linear-gradient(360deg,
-      rgba(17, 19, 31, 0.8) 15.05%,
-      rgba(17, 19, 31, 0.8) 75.3%,
-      rgba(17, 19, 31, 0.8) 98.27%),
-    url(/img/back-image-mob.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-resolution: 2x) {
-  .hero {
-    background-image: linear-gradient(360deg,
-        rgba(17, 19, 31, 0.8) 15.05%,
-        rgba(17, 19, 31, 0.8) 75.3%,
-        rgba(17, 19, 31, 0.8) 98.27%),
-      url(/img/back-image-mob@2x.jpg);
-  }
-}
-
-.hero-title {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #fbfbfb;
-  margin-bottom: 24px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hero-text {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 1.16;
-  text-align: center;
-  color: rgba(251, 251, 251, 0.7);
-  margin-bottom: 38px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hero-link {
-  display: block;
-  margin: 0 auto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  color: #fbfbfb;
-  border-radius: 15px;
-  padding: 14px 32px;
-  width: 141px;
-  height: 46px;
-  background-color: #1b414b;
-}
-
-.hero-link:hover,
-.hero-link:focus {
-  color: #1b414b;
-  background-color: #fbfbfb;
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 32px;
-    background-image: linear-gradient(360deg,
-        rgba(17, 19, 31, 0.8) 15.05%,
-        rgba(17, 19, 31, 0.8) 75.3%,
-        rgba(17, 19, 31, 0.8) 98.27%),
-      url(/img/back-image-tablet.jpg);
-  }
-
-  @media (min-resolution: 2x) {
-    .hero {
-      background-image: linear-gradient(360deg,
-          rgba(17, 19, 31, 0.8) 15.05%,
-          rgba(17, 19, 31, 0.8) 75.3%,
-          rgba(17, 19, 31, 0.8) 98.27%),
-        url(/img/back-image-tablet@2x.jpg);
-    }
-  }
-
-  .hero-title {
-    font-size: 70px;
-    max-width: 630px;
-  }
-
-  .hero-text {
-    line-height: 1.4;
-    font-size: 16px;
-    margin-bottom: 48px;
-    max-width: 580px;
-  }
-
-  .hero-link {
-    padding: 16px 40px;
-    font-size: 18px;
-    line-height: 1.1;
-    width: 179px;
-    height: 52px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .hero {
-    padding-top: 155px;
-    padding-bottom: 180px;
-    background-image: linear-gradient(360deg,
-        rgba(17, 19, 31, 0.8) 15.05%,
-        rgba(17, 19, 31, 0.8) 75.3%,
-        rgba(17, 19, 31, 0.8) 98.27%),
-      url(/img/back-image-desktop.jpg);
-  }
-
-  @media (min-resolution: 2x) {
-    .hero {
-      background-image: linear-gradient(360deg,
-          rgba(17, 19, 31, 0.8) 15.05%,
-          rgba(17, 19, 31, 0.8) 75.3%,
-          rgba(17, 19, 31, 0.8) 98.27%),
-        url(/img/back-image-desktop@2x.jpg);
-    }
-  }
-
-  .hero-title {
-    font-size: 80px;
-    max-width: 1000px;
-  }
-
-  .hero-text {
-    max-width: 580px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .hero {
-    background-image: linear-gradient(360deg,
-        rgba(17, 19, 31, 0.8) 15.05%,
-        rgba(17, 19, 31, 0.8) 75.3%,
-        rgba(17, 19, 31, 0.8) 98.27%),
-      url(/img/back-image-desktopbig.jpg);
-  }
-
-  @media (min-resolution: 2x) {
-    .hero {
-      background-image: linear-gradient(360deg,
-          rgba(17, 19, 31, 0.8) 15.05%,
-          rgba(17, 19, 31, 0.8) 75.3%,
-          rgba(17, 19, 31, 0.8) 98.27%),
-        url(/img/back-image-desktopbig@2x.jpg);
-    }
-  }
-}
-/* #endregion Projects */
